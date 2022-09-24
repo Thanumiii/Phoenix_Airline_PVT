@@ -10,6 +10,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="383d0834-c75c-41a4-9403-6c56da8c1a75" />
+        <option name="url" value="https://github.com/Thanumiii/Phoenix_Airline_PVT.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -46,7 +54,7 @@
       <updated>1664023224113</updated>
       <workItem from="1664023228962" duration="116000" />
       <workItem from="1664023768681" duration="9000" />
-      <workItem from="1664023869493" duration="265000" />
+      <workItem from="1664023869493" duration="1848000" />
     </task>
     <servers />
   </component>
