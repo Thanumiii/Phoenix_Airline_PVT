@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Thanumi
- *
- */
-module Hello {
-}
