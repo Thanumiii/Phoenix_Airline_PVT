@@ -1,4 +1,5 @@
 * {
+
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -112,10 +113,279 @@ nav img {
     background:#0080ff;
     transition: 0.8s;
 }
+.booking-form-box{
+    max-width: 400px;
+    border:1px solid #ced4da;
+    margin:10% auto 0;
+    color:white;
+}
+.booking-form {
+    padding: 0 20px 20px;
+    color: white;
+    text-align: center;
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+.input::placeholder{color:#ffffff!important;
+}
+.input-grp{
+    width: 151px;
+    display: inline-block;
+    color: white;
+}
+.form control{
+    font-size: 12px!important;
+    border-radius: 0!important;
+    color: white!important;
+    background: transparent!important;
+    box-shadow: none!important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+.select-date::-webkit-calendar-picker-indicator {
+    background: transparent!important;
+
+}
+.custom-select{
+    color:#ffffff;
+
+    font-size: 12px!important;
+    border: 1px solid #ced4da!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background: transparent!important;
+}
+.custom-select option{
+    color:#333;
+}
+.flight{
+    width:100px!important;
+    padding: 9px!important;
+    border: 1px solid #ced4da!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background: transparent!important;
+}
+.flight:hover {
+    background: #ffffff!important;
+    color:#000!important;
+    transition: 0.5s;
+}
+
+
+
 
 nav .fa {
     display: none;
 }
+@import url("href=http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 2% 6%;
+}
+
+/*contact page start*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0.7) url(images/Contactnew.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2
+{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(35 97 68);
+
+}
+
+.contact .content p
+{
+    font-size: 25px;
+    font-weight: 100%;
+    color: rgb(255, 240, 240);
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .Contact-Info
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .Contact-Info .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .Contact-Info .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(223, 217, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .Contact-Info .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(14, 241, 25);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .Contact-Info .box .text p
+{
+    font-weight: 300;
+    color: #fff;
+}
+
+.container .Contact-Info .box .text h3
+{
+    font-weight: 500;
+    color: #00d45fbb;
+    font-size: 24px;
+}
+
+.ContactForm
+{
+    width: 45%;
+    padding: 15px;
+    background: #fff;
+    opacity: 0.7;
+    font-size: 18px;
+
+}
+
+.ContactForm h2
+{
+    font-size: 30px;
+    color: #00d45fbb;
+    font-weight: 500;
+}
+
+.ContactForm .input-Box
+{
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.ContactForm .input-Box input,
+.ContactForm .input-Box textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(5, 1, 1);
+    outline: none;
+}
+
+.ContactForm .input-Box span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000;
+}
+
+.ContactForm .input-Box input:focus ~ span,
+.ContactForm .input-Box input:valid ~ span,
+.ContactForm .input-Box textarea:focus ~ span,
+.ContactForm .input-Box textarea:valid ~ span
+{
+    color: #1ee91e;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.ContactForm .input-Box input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+
+    .container
+    {
+        flex-direction: column;
+    }
+
+    .container .Contact-Info
+    {
+        margin-bottom: 40px;
+    }
+    .container .Contact-Info,
+    .ContactForm
+    {
+        width: 100%;
+    }
+}
+
+/*Blog Page end*/
+
 
 
 
@@ -179,7 +449,7 @@ footer {
     color: #ffffff;
     margin: 20px 0 12px;
     padding: auto;
-    font-size: 2opx;
+    font-size: 20px;
 }
 
 .footer-distributed .footer-links a {
@@ -305,6 +575,9 @@ footer {
     margin-bottom: 5px;
 }
 
+
+
+
 @media (max-width: 880px) {
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -317,11 +590,9 @@ footer {
         margin-bottom: 40px;
         text-align: center;
     }
-    .footer-distributed .footer-center i {
-        margin-left: 0;
-    }
-    .main {
-        line-height: normal;
-        font-size: auto;
-    }
+    .footer-distributed .footer-center i
+{
+    box-sizing: border-box;
+}
+{
 }
