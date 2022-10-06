@@ -6,9 +6,21 @@
 }
 .about{
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
-    background-color: #ddd;
+}
+.about h1{
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about h1::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #636e72;
+    display: flex;
+    margin: auto;
 }
 .row{
     width: 100%;
@@ -34,17 +46,80 @@
     color: #222;
 }
 .content h2{
-    font-size: 40px;
+    font-size: 28px;
     font-family: serif;
-    color: #b60112;
+    color: #e84393;
     margin-top: 25px;
 }
 .content p{
     font-size: 20px;
     font-family: serif;
+    font-weight: 500;
+    color: black;
     margin-top: 10px;
     line-height: 1.5;
 }
+
+.OurServices{
+    padding: 50px 60px;
+}
+.OurServices h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.OurServices h1::after{
+    content: "";
+    width: 210px;
+    height: 5px;
+    background-color: #636e72;
+    display: flex;
+    margin: auto;
+}
+.cards-section{
+    text-align: center;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.cards-section>div{
+    padding: 30px 10px;
+    background-color: #74b9ff;
+    cursor: pointer;
+}
+.cards-section>div:hover{
+    background-color: #8c8c8c;
+    transition: 0.2s ease;
+}
+.cards-section i{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #e84393;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.cards-section i:hover{
+    background-color: #74b9ff;
+    transition: 0.5s ease;
+}
+.cards-section h2{
+    font-family: serif;
+    font-weight: bold;
+    color:#e84393;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.cards-section p{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
 @media screen and (max-width:768px){
     .image-section{
         width: 100%;
@@ -65,5 +140,8 @@
     }
     .content p{
         font-size: 18px;
+    }
+    .cards-section{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
