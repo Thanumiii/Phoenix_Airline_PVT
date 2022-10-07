@@ -33,3 +33,14 @@ import java.util.logging.Logger;
             Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    void staffAddInfo(String fname, String lname, String gender, String email, String con, String dob, String pwd) {
+        try {
+            connectToDb();
+            String sql2="INSERT INTO staff(fname,lname,gender,email,con,dob,pwd) VALUES('"+fname+"','"+fname+"','"+gender+"','"+email+"','"+con+"','"+dob+"','"+pwd+"');";
+            st.executeUpdate(sql2);
+        } catch (SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
