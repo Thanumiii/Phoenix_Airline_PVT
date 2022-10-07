@@ -27,7 +27,17 @@
               
                     <label>Username
                 <input type="text" name="Username" value="" />
-                    </label>
+                </label>
+
+                   
+                <div class="radiobutton">
+                    Gender: <input type="radio" name="gender" value="male">
+                   
+                    Male
+                     <input type="radio" name="gender" value="female">
+                    Female
+                </div>    
+
                
                     <label>Password
                 <input type="password" name="Password" value="" />
@@ -38,15 +48,7 @@
                     </label>
                     
                
-                <div class="radiobutton">
-                Gender: <input type="radio" name="gender" value="male">
-               
-                Male
-                 <input type="radio" name="gender" value="female">
-                Female
-                
-                    <input type="submit"id=submitbttn1 value="cancel" />
-                    <input type="submit" id=submitbttn2 value="create account" />
+                <input type="submit"id=submitbttn1 value="cancel"/><input type="submit" id=submitbttn2 value="create account" />
 
 
                     <style>
@@ -84,22 +86,26 @@
                          #submitbttn1{
                             border:0;
                             background:#343050;
-                            padding:.75rem;
+                            padding:.25rem;
                             color:white;
                             margin-left:60px;
                             width:auto;
+                            float:left;
                             text-transform:uppercase;
                             cursor:pointer;
                             &:hover{
                                 background:#349808;
                             }
+
+                        }
                             #submitbttn2{
                             border:0;
                             background:#343050;
-                            padding:.75rem;
+                            padding:.25rem;
                             color:white;
                             margin-right:30px;
                             width:auto;
+                            float:right;
                             text-transform:uppercase;
                             cursor:pointer;
                             &:hover{
