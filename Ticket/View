@@ -15,3 +15,12 @@
           <link rel="stylesheet" type="text/css" href="page.css">
         <title>Ticket View</title>
     </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+		
+<a href="HomePage.html">Home</a>
+
+
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
