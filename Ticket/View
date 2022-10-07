@@ -7,3 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Login.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="nav.js"></script>
+        <link rel="stylesheet" type="text/css" href="nav.css">
+          <link rel="stylesheet" type="text/css" href="page.css">
+        <title>Ticket View</title>
+    </head>
