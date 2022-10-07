@@ -29,3 +29,11 @@
         <form action="filterTicket" method="POST">
             <table border="0" cellspacing='12'>
                 <tr style="font-size: 20px;" >
+		<td>Ticket No:</td>
+                        <td><input class="input-field" type="text" name="ticketID" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-field" type="submit" value="Search" /></td>
+                        <td><input class="input-field" type="reset" value="Cancel" /></td>
+                    </tr>
+            </table>
