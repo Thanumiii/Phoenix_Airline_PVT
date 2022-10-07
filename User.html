@@ -5,51 +5,137 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h3>User Registration</h3>
+        
         <br>
         <form action="UserRegServ" method="POST">
-            
+            <section class="container">
+                <h1>Create your account.</h1>
                  <tbody>
                     <tr>
+                        <label>
                         <td>First name</td>
                         <td><input type="text" name="fname" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Last Name</td>
                         <td><input type="text" name="lname" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <div class="radiobutton">
                         <td>Gender</td>
                         <td>
                             <input type="radio" name="gender" value="Male">Male
                             <input type="radio" name="gender" value="Female">Female
                         </td>
+                        </div>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Email</td>
                         <td><input type="text" name="email" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Contact Number</td>
                         <td><input type="text" name="con" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Date of Birth</td>
                         <td><input type="text" name="dob" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Password</td>
                         <td><input type="text" name="pwd" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
+                        <label>
                         <td>Confirm Password</td>
                         <td><input type="text" name="cpwd" value=""></td>
+                        </label>
                     </tr>
+
                     <tr>
-                        <td><input type="reset" value="Clear" name="reset"></td>
-                        <td><input type="submit" value="Submit" name="submit"></td>
+                        <label>
+                        <td><input type="reset" id="bttn1" name="reset"></td>
+                        <td><input type="submit" id="bttn2" name="submit"></td>
+                        </label>
                     </tr>
                     
+                    <style>   
+                        body{
+                            font-family:sans-serif;
+                        }
+                        .container{
+                            max-width:400px;
+                            margin:2rem auto;
+                            border:2px solid #E74C3C;
+                            padding:2rem;
+                            border-radius:5px;
+                        }
+                        label{
+                            display:block;
+                            padding:1rem 0.25rem; 
+                            text-transform:uppercase;
+                            font-size:14px;
+                            font-weight: 300;
+                        }
+                        input,textarea{
+                            display :block;
+                            width:100%;
+                            border:2px solid #298089;
+                            padding:.5rem;
+                            font-size:18px;
+                            border-radius:5px;
+                        }
+                        .radiobutton {
+                            display:flex;     
+                            justify-content:center;
+                            align-items:center;
+                            vertical-align:middle;
+                            
+                            padding-left:0;
+                        }
+                        
+                        #bttn1{
+                            border:0;
+                            background:#343050;
+                            padding:.75rem;
+                            color:white;
+                            margin-left:60px;
+                            width:auto;
+                            float:left;
+                            text-transform:uppercase;
+                            cursor:pointer;
+                        }
+                        #bttn2{
+                            border:0;
+                            background:#343050;
+                            padding:.75rem;
+                            margin-left: 20px;
+                            color:white;
+                            margin-right:60px;
+                            width:auto;
+                            float: right;
+                            text-transform:uppercase;
+                            cursor:pointer;
+                        }
+                    </style>
                  </tbody>
             </table>
         </form>
