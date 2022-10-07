@@ -60,5 +60,16 @@ public class UserRegServ extends HttpServlet {
             if(cpwd.equals(pwd)){
                 UserReg ur=new UserReg();
                 ur.userAddInfo(fname,lname,gender,email,con,dob,pwd);
-                response.sendRedirect("HomePage.html");          
+                response.sendRedirect("HomePage.html"); 
+          }else{
+                out.println("<script type=\"text/javascript\">");
+                    out.println("alert('Passwords do not match');");
+                    out.println("location='UserRegistration.html'");
+                    out.println("</script>");
+            }
+        }
+        
+    }
+
+    }      
             
