@@ -11,3 +11,7 @@ import java.util.logging.Logger;
  *
  * @author Himasha Gayathri
  */
+ public class UserReg {
+    Statement st;
+    void userAddInfo(String fname,String lname, String gender, String email, String con, String dob, String pwd) {
+        try {
