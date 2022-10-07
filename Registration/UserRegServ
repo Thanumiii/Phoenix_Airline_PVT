@@ -55,4 +55,10 @@ public class UserRegServ extends HttpServlet {
             out.println("<html><script type=\"text/javascript\">");
                     out.println("alert('error');");
                     out.println("</script><html>");
+          }
+        else{
+            if(cpwd.equals(pwd)){
+                UserReg ur=new UserReg();
+                ur.userAddInfo(fname,lname,gender,email,con,dob,pwd);
+                response.sendRedirect("HomePage.html");          
             
