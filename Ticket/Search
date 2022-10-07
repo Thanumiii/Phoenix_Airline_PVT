@@ -50,3 +50,26 @@ while(resultSet.next()){
         <td><%=resultSet.getString("price")%></td>
         
         <td>
+        <form action="bookFlight.jsp">
+                <input type="hidden" name="flightID" value="<%=resultSet.getString("flightID")%>">
+              
+                <input type="submit" value="SELECT">
+            </form>
+        </td>
+        
+</tr>     
+ 
+
+<% }
+
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+
+%>
+        </table>
+       
+        </body>
+</html>
