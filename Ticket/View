@@ -37,3 +37,8 @@
                         <td><input class="input-field" type="reset" value="Cancel" /></td>
                     </tr>
             </table>
+	     </form>
+            </center>
+    </body>
+</html>
+
