@@ -40,3 +40,9 @@ public class UserRegServ extends HttpServlet {
      @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+            // processRequest(request, response);
+       
+        PrintWriter out=response.getWriter();
+        String fname=request.getParameter("fname");
+        String lname=request.getParameter("lname");
+            
