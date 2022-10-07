@@ -42,3 +42,11 @@ resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 
     %>
+    <tr>
+       <td><%=resultSet.getString("flightID")%></td>
+        <td><%=resultSet.getString("departing_date")%></td>
+        <td><%=resultSet.getString("departureTime")%></td>
+        <td><%=resultSet.getString("arrivalTime")%></td>
+        <td><%=resultSet.getString("price")%></td>
+        
+        <td>
