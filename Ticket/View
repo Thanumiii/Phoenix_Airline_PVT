@@ -24,3 +24,8 @@
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 <i class="fa fa-bars"></i>
 </a>
+</div><center>
+            <p class="topic">Ticket Information:</p>
+        <form action="filterTicket" method="POST">
+            <table border="0" cellspacing='12'>
+                <tr style="font-size: 20px;" >
