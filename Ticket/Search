@@ -11,3 +11,21 @@
     ResultSet resultSet = null;
 %>
 <!DOCTYPE html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="bookFlightCSS.css">
+        <title>JSP Page</title>
+    </head>
+    <body>
+      <%@include file="bookingFlight.html"%>
+    
+      <p style=" font-family: Times New Roman, serif; font-size: 16px;margin-left:15px;">Choose your departure flight</p>
+      <p  style=" font-family: Times New Roman, serif; font-size: 16px;margin-left:15px;">From :<%=request.getParameter("departingForm")%> To: <%=request.getParameter("destination")%></p>
+      <table id="flights">
+          <tr>
+            <th>Flight ID </th>
+            <th>Departing Date</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price($)</th>
+            </tr><tr> 
