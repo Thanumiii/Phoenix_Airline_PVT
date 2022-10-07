@@ -22,3 +22,14 @@ import java.util.logging.Logger;
             Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    private void connectToDb() {
+        try {
+            String driver="com.mysql.jdbc.Driver";
+            String url="jdbc:mysql://localhost:3306/airplanedb";
+            Class.forName(driver);
+            Connection con=DriverManager.getConnection(url,"root","");
+            st=con.createStatement();
+        } catch (ClassNotFoundException|SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
