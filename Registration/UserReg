@@ -1,0 +1,59 @@
+package RegistrationPack;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author Himasha Gayathri
+ */
+ public class UserReg {
+    Statement st;
+    void userAddInfo(String fname,String lname, String gender, String email, String con, String dob, String pwd) {
+        try {
+        connectToDb();
+            String sql1="INSERT INTO user(fname,lname,gender,email,con,dob,pwd) VALUES('"+fname+"','"+lname+"','"+gender+"','"+email+"','"+con+"','"+dob+"','"+pwd+"');";
+            st.executeUpdate(sql1);
+        } catch (SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    private void connectToDb() {
+        try {
+            String driver="com.mysql.jdbc.Driver";
+            String url="jdbc:mysql://localhost:3306/airplanedb";
+            Class.forName(driver);
+            Connection con=DriverManager.getConnection(url,"root","");
+            st=con.createStatement();
+        } catch (ClassNotFoundException|SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    void staffAddInfo(String fname, String lname, String gender, String email, String con, String dob, String pwd) {
+        try {
+            connectToDb();
+            String sql2="INSERT INTO staff(fname,lname,gender,email,con,dob,pwd) VALUES('"+fname+"','"+fname+"','"+gender+"','"+email+"','"+con+"','"+dob+"','"+pwd+"');";
+            st.executeUpdate(sql2);
+        } catch (SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    void adminAddInfo(String fname, String lname, String gender, String email, String con, String dob, String pwd) {
+        try {
+            connectToDb();
+            String sql3="INSERT INTO admin(fname,lname,gender,email,con,dob,pwd) VALUES('"+fname+"','"+lname+"','"+gender+"','"+email+"','"+con+"','"+dob+"','"+pwd+"');";
+            st.executeUpdate(sql3);
+        } catch (SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+}
+
+
