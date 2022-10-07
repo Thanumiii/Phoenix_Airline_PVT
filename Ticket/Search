@@ -29,3 +29,16 @@
             <th>Arrival Time</th>
             <th>Price($)</th>
             </tr><tr> 
+                 <%
+  try
+  {
+DbCon db = new DbCon();
+statement  = db.Connection().createStatement();
+ String departingFrom = request.getParameter("departingForm");
+ String destination =request.getParameter("destination");
+ String departingDate = request.getParameter("departingDate");
+ String sql ="SELECT flightID , departing_date , departureTime, arrivalTime,price FROM flightdetails  WHERE departing_from ='"+departingFrom+"' AND departing_to='"+destination+"' AND departing_date='"+departingDate+"'";
+resultSet = statement.executeQuery(sql);
+while(resultSet.next()){
+
+    %>
