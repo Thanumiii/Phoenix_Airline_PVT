@@ -15,3 +15,10 @@ import java.util.logging.Logger;
     Statement st;
     void userAddInfo(String fname,String lname, String gender, String email, String con, String dob, String pwd) {
         try {
+        connectToDb();
+            String sql1="INSERT INTO user(fname,lname,gender,email,con,dob,pwd) VALUES('"+fname+"','"+lname+"','"+gender+"','"+email+"','"+con+"','"+dob+"','"+pwd+"');";
+            st.executeUpdate(sql1);
+        } catch (SQLException ex) {
+            Logger.getLogger(UserReg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
