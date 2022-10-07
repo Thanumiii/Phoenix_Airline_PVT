@@ -51,4 +51,8 @@ public class UserRegServ extends HttpServlet {
         String dob=request.getParameter("dob");
         String pwd=request.getParameter("pwd");
         String cpwd=request.getParameter("cpwd");
+        if(fname.equals("")||lname.equals("")||gender.equals("")||email.equals("")||con.equals("")||dob.equals("")||cpwd.equals("")){
+            out.println("<html><script type=\"text/javascript\">");
+                    out.println("alert('error');");
+                    out.println("</script><html>");
             
